@@ -8,19 +8,27 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "build-frontend": "cd frontend && npm run build",
+    "dev-frontend": "cd frontend && npm run dev",
+    "deploy": "npm run build-frontend && cdk deploy"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "22.7.9",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "aws-cdk": "2.1027.0",
+    "jest": "^29.7.0",
+    "react-scripts": "^5.0.1",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "~5.6.3"
   },
   "dependencies": {
     "aws-cdk-lib": "2.211.0",
-    "constructs": "^10.0.0"
+    "constructs": "^10.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }

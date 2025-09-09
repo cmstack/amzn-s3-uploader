@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm run build-frontend:*)",
+      "Bash(npm run build:*)",
+      "Bash(cdk synth:*)",
+      "Bash(npm test)",
+      "Bash(npm init:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run cdk:synth:*)",
+      "Read(//Users/icharlem/Desktop/dev/solutions/**)",
+      "Bash(cdk destroy:*)",
+      "Bash(aws s3 rm:*)",
+      "Bash(npm run deploy:*)",
+      "Bash(cdk deploy:*)",
+      "Bash(aws cloudformation describe-stacks:*)",
+      "Bash(aws cloudformation describe-stack-events:*)",
+      "Bash(aws cloudformation wait:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
